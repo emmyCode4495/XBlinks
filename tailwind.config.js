@@ -15,8 +15,8 @@ module.exports = {
           "100%": { transform: "translate(0px, 0px) scale(1)" },
         },
         drawLine: {
-          "0%": { strokeDashoffset: "3000" },
-          "100%": { strokeDashoffset: "0" },
+          "0%": { strokeDasharray: "0 4000", strokeDashoffset: "0" },
+          "100%": { strokeDasharray: "4000 0", strokeDashoffset: "0" },
         },
         slideRight: {
           "0%": { transform: "translateX(-100%)" },
@@ -33,6 +33,7 @@ module.exports = {
         "slide-right": "slideRight 20s linear infinite",
         "slide-left": "slideLeft 20s linear infinite",
         "spin-slow": "spin 6s linear infinite",
+        "draw-line": "drawLine 3s linear infinite",
       },
     },
   },
