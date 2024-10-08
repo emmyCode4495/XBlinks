@@ -6,8 +6,6 @@ import {
 import { SliceZone } from "@prismicio/react";
 import { redirect } from "next/navigation";
 
-import { components } from "@/slices";
-
 export default function SliceSimulatorPage({
   searchParams,
 }: SliceSimulatorParams & { searchParams: { secret?: string } }) {
@@ -22,7 +20,7 @@ export default function SliceSimulatorPage({
 
   return (
     <SliceSimulator>
-      <SliceZone slices={slices} components={components} />
+      <SliceZone slices={slices} />
     </SliceSimulator>
   );
 }

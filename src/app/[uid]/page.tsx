@@ -5,7 +5,6 @@ import { SliceZone } from "@prismicio/react";
 import * as prismic from "@prismicio/client";
 
 import { createClient } from "@/prismicio";
-import { components } from "@/slices";
 
 type Params = { uid: string };
 
@@ -43,7 +42,11 @@ export default async function Page({ params }: { params: Params }) {
     .getByUID("page", params.uid)
     .catch(() => notFound());
 
-  return <SliceZone slices={page.data.slices} components={components} />;
+  if (!page) {
+    return notFound();
+  }
+
+  return <SliceZone slices={page.data.slices} />;
 }
 
 export async function generateStaticParams() {
