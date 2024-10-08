@@ -5,8 +5,11 @@ import localFont from "next/font/local";
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import "./app.css";
+// import Header from "@/components/Header";
 import Header from "@/components/ComingSoonHeader";
 import AnimatedBackground from "@/components/animatebackground";
+import Navbar from "@/components/Navbar";
+// import Partner from "@/components/partner";
 
 const PlusJakarta = localFont({
   src: "../../public/fonts/PlusJakartaSans-Variable.woff2",
@@ -15,7 +18,12 @@ const PlusJakarta = localFont({
   variable: "--plus-jakarta-sans",
 });
 
-const DarkModeToggle = ({ darkMode, toggleDarkMode }) => (
+interface DarkModeToggleProps {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
+}
+
+const DarkModeToggle = ({ darkMode, toggleDarkMode }: DarkModeToggleProps) => (
   <button
     onClick={toggleDarkMode}
     className="fixed bottom-5 right-5 z-50 rounded-full bg-white p-2 transition-colors duration-300 dark:bg-gray-800"
