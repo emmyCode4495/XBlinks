@@ -8,7 +8,9 @@ function ComingSoon() {
         className="h-10 w-auto cursor-pointer text-blue-400 transition-colors duration-300 hover:text-blue-950"
         primaryColor="currentColor"
       />
-      <div className="text-2xl font-bold text-blue-950">... Coming Soon</div>
+      <div className="text-2xl font-bold text-blue-950 dark:text-white">
+        ... Coming Soon
+      </div>
     </div>
   );
 }

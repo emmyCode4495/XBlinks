@@ -1,24 +1,19 @@
 import React from "react";
-import gsap from "gsap";
-import BlueBg0 from "./bluebg";
-import BlueBg from "./bluebg2";
-import FollowX from "./followx";
-import ComingSoon from "./comingsoon";
-import JoinWaitlist from "./joinwaitlist";
-import Icon from "./ComingSoonHero";
+import Navbar from "./Navbar";
+import Lines from "./Lines";
+import Lines2 from "./Lines2";
+import HeroText from "./HeroText";
+import HeroComponent from "./HeroComponent";
 
-interface Props {}
+type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="relative flex h-screen w-screen flex-col items-center justify-center py-4">
-      <BlueBg0 />
-      <BlueBg />
-      <FollowX />
-
-      <ComingSoon />
-      <JoinWaitlist />
-      <Icon />
+    <header className="py4 -mb-28 justify-center">
+      <Lines />
+      <HeroText />
+      <HeroComponent />
+      <Lines2 />
     </header>
   );
 }

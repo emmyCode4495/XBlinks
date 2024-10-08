@@ -3,8 +3,9 @@ import React from "react";
 function FollowX() {
   return (
     <a
+      target="blank"
       href="https://x.com/XBlinksOnSol"
-      className="fixed right-4 top-4 z-50 font-medium text-blue-950 hover:animate-pulse"
+      className="fixed right-4 top-4 font-medium text-blue-950 hover:animate-pulse"
     >
       <div className="flex items-center rounded-md border border-blue-400 border-s-blue-300 bg-white px-5 py-3 shadow-md">
         Follow Us For Updates
