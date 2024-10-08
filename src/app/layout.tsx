@@ -5,11 +5,8 @@ import localFont from "next/font/local";
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
 import "./app.css";
-// import Header from "@/components/Header";
 import Header from "@/components/ComingSoonHeader";
 import AnimatedBackground from "@/components/animatebackground";
-import Navbar from "@/components/Navbar";
-import Partner from "@/components/partner";
 
 const PlusJakarta = localFont({
   src: "../../public/fonts/PlusJakartaSans-Variable.woff2",
